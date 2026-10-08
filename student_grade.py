@@ -6,12 +6,19 @@ physics = int(input("Enter Physics marks: "))
 english = int(input("Enter English marks: "))
 python_marks = int(input("Enter Python marks: "))
 
-marks = [maths, chemistry, physics, english, python_marks]
+marks = {
+    "Maths": maths,
+    "Chemistry": chemistry,
+    "Physics": physics,
+    "English": english,
+    "Python": python_marks
+}
 
-if any(mark < 0 or mark > 100 for mark in marks):
+if any(mark < 0 or mark > 100 for mark in marks.values()):
     print("Invalid marks! Enter marks between 0 and 100.")
+
 else:
-    total = sum(marks)
+    total = sum(marks.values())
     percentage = total / 5
 
     if percentage >= 90:
@@ -33,7 +40,15 @@ else:
     print("Percentage:", percentage, "%")
     print("Grade:", grade)
 
-    if all(mark >= 40 for mark in marks):
-        print("Result: PASS")
+    print("\n--- Subject Results ---")
+
+    for subject, mark in marks.items():
+        if mark >= 40:
+            print(subject + ":", "PASS")
+        else:
+            print(subject + ":", "FAIL")
+
+    if all(mark >= 40 for mark in marks.values()):
+        print("\nOverall Result: PASS")
     else:
-        print("Result: FAIL")
+        print("\nOverall Result: FAIL")
