@@ -1,61 +1,20 @@
+# Plain Academic Performance Engine CLI
 
-# Student Grade Calculator
-
-## About the Project
-Student Grade Calculator is a beginner-friendly Python project that calculates a student's total marks, average, percentage, grade, and final result.
+A plain-text system to calculate student academic milestones, save report cards locally, track multi-student distributions, and run code diagnostics.
 
 ## Features
-- Accepts student name
-- Takes marks for five subjects
-- Validates marks between 0 and 100
-- Handles invalid input
-- Calculates total marks
-- Calculates average and percentage
-- Assigns grades based on percentage
-- Displays PASS or FAIL
-- Generates a student report card
+- Permanent record keeping using local JSON storage models
+- Dynamic subject updates instead of rigid static course tracking lists
+- Comparative class analysis to measure individual scores against class averages
+- Built-in comprehensive programmatic suite testing parameters
+- Pure plain-text rendering with no symbols, icons, or custom fonts
 
-## Subjects
-1. Maths
-2. Chemistry
-3. Physics
-4. Python
-5. English
+## Requirements
+- Python 3.6 or higher
 
-## Grading System
-| Percentage | Grade |
-|---|---|
-| 90-100 | A+ |
-| 80-89.99 | A |
-| 70-79.99 | B |
-| 60-69.99 | C |
-| 35-59.99 | D |
-| Below 35 | F |
-
-A student fails if any subject mark is below 35.
-
-## Technologies Used
-- Python 3
-- GitHub
-
-## How to Run
-1. Install Python 3.
-2. Download or clone this repository.
-3. Open the terminal.
-4. Run the command:
-
-```bash
-python student_grade_calculator.py
-```
-
-## Version
-Version 4.0
-
-## Author
-Bhavyasree
-
-## Future Improvements
-- Save student reports to a file
-- Support multiple students
-- Add a graphical user interface (GUI)
-- 
+## Quick Start
+1. Save this entire block as `student_calculator.py`.
+2. Run the application layer from your local terminal session:
+   ```bash
+   python student_calculator.py
+   ```
